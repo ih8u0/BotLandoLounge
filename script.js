@@ -5,4 +5,14 @@ const findSales = () => {
   }
 };
 
+const addWindow = () => {
+  const window = document.createElement("div");
+  window.classList.add("window-botlando");
+  window.innerHTML =
+    "<h2>Search best sales!</h2><button>start searching</button>";
+  document.body.appendChild(window);
+  return window;
+};
+
+addWindow();
 findSales();
