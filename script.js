@@ -1,8 +1,8 @@
 const findSales = () => {
-  const sales = document.querySelectorAll("ul#articleListWrapper li");
-  for (sale of sales) {
-    console.log(sale.innerHTML);
-  }
+  // const articles = document.querySelector("ul#articleListWrapper");
+  const articles = document.querySelector("#articleListWrapper");
+  articlesArray = articles.getElementsByTagName("li");
+  console.log(articlesArray);
 };
 
 const addWindow = () => {
