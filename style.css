@@ -14,7 +14,7 @@ header {
     /* background-color: #FF690030; */
     position: fixed;
     left: 3rem;
-    top: 50vh;
+    top: 10vh;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -29,4 +29,5 @@ header {
     background-color: transparent;
     border: .2rem solid black;
     padding: 1rem;
+    margin: 1rem;
 }
