@@ -77,11 +77,7 @@ const searchArticles = () => {
 };
 
 addWindow();
-<<<<<<< HEAD
 openOffers();
 searchArticles();
 
 const yourSize = prompt("your size is:");
-=======
-openOffers();
->>>>>>> 6cc7e875c92659b6052064d475eb1c8af9b0d58e
