@@ -37,10 +37,18 @@ const findSales = (sale) => {
 
 const addWindow = () => {
   const windowBox = document.createElement("div");
+  const scrollDown = document.createElement("h2");
   windowBox.classList.add("window-botlando");
+  scrollDown.setAttribute("id", "scrolldown-botlando");
   windowBox.innerHTML =
-    '<h2>Search best sales!</h2><button id="70">Sales > 70%</button><button id="60">Sales > 60%</button><button id="50">Sales > 50%</button><h4>BotLandoLounge | <a href="https://github.com/ih8u0/BotLandoLounge" target="_blank">GitHub</a></h4>';
+    '<h2>Search best sales!</h2><button id="70">Sales > 70%</button><button id="65">Sales > 65%</button><button id="60">Sales > 60%</button><button id="55">Sales > 55%</button><h4>BotLandoLounge | <a href="https://github.com/ih8u0/BotLandoLounge" target="_blank">GitHub</a></h4>';
+  scrollDown.innerHTML = "👇";
   document.body.appendChild(windowBox);
+  document.body.appendChild(scrollDown);
+
+  scrollDown.addEventListener("click", () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
 };
 
 const openOffers = () => {
