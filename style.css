@@ -46,7 +46,7 @@ header {
     cursor: pointer;
 }
 
-.window-botlando button {
+.window-botlando button, .window-botlando input {
     background-color: transparent;
     border: .2rem solid black;
     padding: 1rem;

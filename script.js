@@ -32,7 +32,7 @@ const addWindow = () => {
   windowBox.classList.add("window-botlando");
   scrollDown.setAttribute("id", "scrolldown-botlando");
   windowBox.innerHTML =
-    '<h2>Search best sales!</h2><button id="70">Sales > 70%</button><button id="65">Sales > 65%</button><button id="60">Sales > 60%</button><button id="55">Sales > 55%</button><h4>BotLandoLounge | <a href="https://github.com/ih8u0/BotLandoLounge" target="_blank">GitHub</a></h4>';
+    '<h2>Search best sales!</h2><button id="70">Sales > 70%</button><button id="65">Sales > 65%</button><button id="60">Sales > 60%</button><button id="55">Sales > 55%</button><input type="text" id="search" placeholder="search articles" /><h4>BotLandoLounge | <a href="https://github.com/ih8u0/BotLandoLounge" target="_blank">GitHub</a></h4>';
   scrollDown.innerHTML = "👇";
   document.body.appendChild(windowBox);
   document.body.appendChild(scrollDown);
@@ -51,6 +51,33 @@ const openOffers = () => {
   });
 };
 
+const searchArticles = () => {
+  setTimeout(() => {
+    let input = document.getElementById("search");
+
+    input.addEventListener("keyup", (e) => {
+      input = e.target.value;
+      let articlesToSearch = document.querySelectorAll(
+        ".Articlestyles__ArticleWrapper-sc-hib3gs-0"
+      );
+
+      articlesToSearch.forEach((oneArticle) => {
+        let articleName = oneArticle.querySelector(
+          ".Articlestyles__ArticleInfoWrapper-sc-hib3gs-1"
+        ).innerText;
+        let regex = new RegExp(input, "i", "g");
+        if (articleName.match(regex)) {
+          oneArticle.style.display = "block";
+        } else {
+          oneArticle.style.display = "none";
+        }
+      });
+    });
+  }, 2000);
+};
+
 addWindow();
-// findSales();
 openOffers();
+searchArticles();
+
+const yourSize = prompt("your size is:");

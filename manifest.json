@@ -5,9 +5,14 @@
   "version": "1.0.0",
   "content_scripts": [
   {
-     "matches": ["https://www.zalando-lounge.pl/*"],
-     "css": ["style.css"],
-     "js": ["script.js"]
+    "matches": ["https://www.zalando-lounge.pl/campaigns/*"],
+    "css": ["style.css"],
+    "js": ["script.js"]
+  },
+  {
+    "matches": ["https://www.zalando-lounge.pl/campaigns/*/categories/*/articles/*"],
+    "js": ["articleScript.js"],
+    "css": ["articleStyles.css"]
   }
   ]
 }
