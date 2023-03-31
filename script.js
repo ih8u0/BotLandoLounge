@@ -52,5 +52,4 @@ const openOffers = () => {
 };
 
 addWindow();
-// findSales();
 openOffers();
