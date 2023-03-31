@@ -22,15 +22,6 @@ const findSales = (sale) => {
 
     if (100 - sale >= (newPrice / oldPrice) * 100) {
       window.open(href);
-      // console.log(
-      //   `100% - ${sale}% = ${
-      //     100 - sale
-      //   }%\nPLACISZ ${newPrice} / ${oldPrice} * 100 = ${
-      //     (newPrice / oldPrice) * 100
-      //   }% GLOWNEJ CENY\nOSZCZEDZASZ ${
-      //     100 - (newPrice / oldPrice) * 100
-      //   }%\n\n${href}`
-      // );
     }
   }
 };
