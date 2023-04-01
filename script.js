@@ -79,5 +79,3 @@ const searchArticles = () => {
 addWindow();
 openOffers();
 searchArticles();
-
-const yourSize = prompt("your size is:");

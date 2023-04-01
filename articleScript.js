@@ -1,3 +1,5 @@
+const size = ["M", "36"];
+
 const addArticle = (mySize) => {
   const sizeList = document.querySelectorAll(
     ".styles__ArticleSizeItemWrapper-sc-dt4c4z-4"
@@ -7,7 +9,7 @@ const addArticle = (mySize) => {
   if (sizeList.length >= 1) {
     for (let size of sizeList) {
       let articleSize = size.querySelector("button").firstChild.innerText;
-      if (articleSize == mySize) {
+      if (articleSize == mySize[0] || articleSize == mySize[1]) {
         size.firstChild.click();
         button.click();
       }
@@ -17,5 +19,5 @@ const addArticle = (mySize) => {
   }
 };
 
-console.log(yourSize);
-addArticle(35);
+addArticle(size);
+console.log("kajsdhfgkjhg");

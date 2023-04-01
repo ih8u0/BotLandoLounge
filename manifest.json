@@ -5,12 +5,12 @@
   "version": "1.0.0",
   "content_scripts": [
   {
-    "matches": ["https://www.zalando-lounge.pl/campaigns/*"],
+    "matches": ["https://www.zalando-lounge.pl/campaigns/*/1"],
     "css": ["style.css"],
     "js": ["script.js"]
   },
   {
-    "matches": ["https://www.zalando-lounge.pl/campaigns/*/categories/*/articles/*"],
+    "matches": ["https://www.zalando-lounge.pl/campaigns/*/categories/*"],
     "js": ["articleScript.js"],
     "css": ["articleStyles.css"]
   }
